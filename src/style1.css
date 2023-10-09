@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.cdnfonts.com/css/dreams');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "proxima-nova", sans-serif;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Black at the bottom to transparent at the top */
+}
+.container {
+    display: flex;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.container .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .container .video-bg {
+        height: auto;
+        min-height: 100%;
+        width: 100%;
+
+    }
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+.container header {
+    font-size: 139px;
+    color: cyan;
+    font-weight: 600;
+    text-align: center;
+}
+.container p {
+    font-size: 16px;
+    font-family: 'DREAMS';
+    font-weight: 400;
+    color: #fff;
+    max-width: 550px;
+    text-align: center;
+}
+
+.container .time-content {
+    display: flex;
+    align-items: center;
+    margin: 20rem;
+    position: relative;
+    top: 290px;
+    font-size: 36px;
+
+}
+.time-content .time {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.time .number {
+    font-weight: 800;
+    font-size: 9px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-family: 'DREAMS';
+    line-height: 4;
+    color: cyan;
+}
+.time .text {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    align : center;
+
+}
+
+@media screen and (max-width: 480px) {
+    .container .time-content {
+        display: flex;
+        align-items: center;
+        margin: 20rem;
+        border-radius: 0.5rem;
+        position: relative;
+        top: 310px;
+
+
+    }
+    .time-content .time {
+        margin: 0.0rem;
+    }
+    .time .number {
+        font-size: 36px;
+    }
+    .time .text {
+        font-size: 10px;
+    }
+    .time-content .time {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .time .number {
+        font-weight: 800;
+        font-size: 9px;
+        font-family: 'DREAMS';
+        line-height: 4;
+        color: cyan;
+    }
+    .time .text {
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+
+    }
+}
+
+
+.email-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 36px;
+    text-align: center; /* Center align text on small screens */
+}
+@media screen and (max-width: 480px) {
+    .email-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10%;
+        text-align: center; /* Center align text on small screens */
+    }
+}
+
+.email-content p {
+    font-size: 13px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    height: auto; /* Remove fixed height */
+    max-width: 360px;
+    width: 100%;
+    margin-top: 4px;
+    text-align: center; /* Center align elements on small screens */
+}
+
+.input-box input,
+.input-box button {
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 0.5px solid #fff;
+    border-radius: 9px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+    padding: 10px; /* Increase padding for better touch usability on small screens */
+}
+
+.input-box input {
+    margin-bottom: 10px; /* Add some spacing between input and button on small screens */
+}
+
+.input-box button {
+    cursor: pointer;
+    background-color: #333333;
+    color: cyan;
+    white-space: nowrap;
+    padding: 10px 20px; /* Increase padding for better touch usability on small screens */
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 480px) {
+    .container header {
+        font-size: 50px;
+    }
+}
+

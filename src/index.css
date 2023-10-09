@@ -1,0 +1,97 @@
+/* Reset some default styles for better responsiveness */
+
+
+/* Style the video background */
+
+/* Style the content container */
+.app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Centered content */
+.content {
+  text-align: center;
+}
+
+.centered {
+  max-width: 80%;
+  padding: 100px;
+
+}
+
+h1 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0%;
+  font-family: 'DREAMS';
+  color: cyan;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 480px) {
+  
+  .content {
+    text-align: center;
+  }
+  
+  .centered {
+    max-width: 80%;
+    padding: 100px;
+  
+  }
+  
+  h1 {
+    font-size: 0.rem;
+    margin-bottom: 1rem;
+    padding-top: 0%;
+    font-family: 'DREAMS';
+    color: cyan;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+
+/* Style the countdown timer */
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  max-width: 300px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 4px;
+  position: relative;
+  
+}
+
+@media screen and (max-width: 480px) {
+  .countdown .time-content {
+    display: flex; 
+    font-size: 5px;
+
+
+  }
+}
+
+ 
